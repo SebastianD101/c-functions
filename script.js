@@ -79,8 +79,8 @@ function functionChange() {
     }
     else if (functionSelected == "access") {
         document.getElementById("format").innerHTML = "int access(char *filename, int mode);";
-        document.getElementById("functionality").innerHTML = "Checks if a file exists.";
-        document.getElementById("mode").innerHTML = "F_OK, R_OK, W_OK, and X_OK";
+        document.getElementById("functionality").innerHTML = "Checks if a file functionalities.";
+        document.getElementById("mode").innerHTML = "F_OK to check for existance, R_OK to check for reading, W_OK to check for writing, and X_OK to check for file existances and grants read, write, and execute permissions";
         document.getElementById("return").innerHTML = "0 if successful, -1 if not.";
         document.getElementById("tag").style.display = "block";
     }
