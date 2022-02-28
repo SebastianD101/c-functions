@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>C Functions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+</head>
+<div id="square"></div>
+<script src="script.js"></script>
+<body>
+<div>
+    <form><br><br><br><br><br><br>
+        <center>
+            <select id="selectMenu" onchange="functionChange()">
+                <option value="">Select a function</option>
+                <option value="fopen">fopen()</option>
+                <option value="fclose">fclose()</option>
+                <option value="fscanf">fscanf()</option>
+                <option value="fprintf">fprintf()</option>
+                <option value="fread">fread()</option>
+                <option value="fwrite">fwrite()</option>
+                <option value="fseek">fseek()</option>
+                <option value="ftell">ftell()</option>
+                <option value="feof">feof()</option>
+                <option value="ferror">ferror()</option>
+                <option value="clearerr">clearerr()</option>
+                <option value="access">access()</option>
+            </select>        
+        </center>
+        <p>Format</p>
+        <p id="format"></p><br>
+        <p>Functionality</p>
+        <p id="functionality"></p><br>
+        <p>Return Value</p>
+        <p id="return"></p><br>
+        <p id="tag">Mode</p>   
+        <p id="mode"></p><br>
+    </form>
+</div>
+</html>
