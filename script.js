@@ -5,6 +5,7 @@ function functionChange() {
         document.getElementById("functionality").innerHTML = "Opens a file for reading or writing.";
         document.getElementById("mode").innerHTML = "'r' for reading, 'w' for writing, 'a' for appending, or 'r+' for both reading and writing.";
         document.getElementById("return").innerHTML = "null pointer if not successful";
+        document.getElementById("tag").style.display = "block";
     }
     else if (functionSelected == "fclose") {
         document.getElementById("format").innerHTML = "int fclose(FILE *stream);";
@@ -46,6 +47,7 @@ function functionChange() {
         document.getElementById("functionality").innerHTML = "Changes the file position indicator for a file.";
         document.getElementById("mode").innerHTML = "SEEK_SET, SEEK_CUR, SEEK_END";
         document.getElementById("return").innerHTML = "0 if successful, EOF if not.";
+        document.getElementById("tag").style.display = "block";
     }
     else if (functionSelected == "ftell") {
         document.getElementById("format").innerHTML = "long ftell(FILE *stream);";
@@ -80,5 +82,6 @@ function functionChange() {
         document.getElementById("functionality").innerHTML = "Checks if a file exists.";
         document.getElementById("mode").innerHTML = "F_OK, R_OK, W_OK, and X_OK";
         document.getElementById("return").innerHTML = "0 if successful, -1 if not.";
+        document.getElementById("tag").style.display = "block";
     }
 }
