@@ -91,4 +91,25 @@ function functionChange() {
         document.getElementById("tag").style.display = "none";
         document.getElementById("mode").innerHTML = "";
     }
+    else if (functionSelect == "calloc") {
+        document.getElementById("format").innerHTML = "void *calloc(size_t nmemb, size_t size);";
+        document.getElementById("functionality").innerHTML = "Allocates memory for an array";
+        document.getElementById("return").innerHTML = "pointer to the allocated memory";
+        document.getElementById("tag").style.display = "none";
+        document.getElementById("mode").innerHTML = "";
+    }
+    else if (functionSelected == "malloc") {
+        document.getElementById("format").innerHTML = "void *malloc(size_t size);";
+        document.getElementById("functionality").innerHTML = "Allocates memory";
+        document.getElementById("return").innerHTML = "pointer to the allocated memory";
+        document.getElementById("tag").style.display = "none";
+        document.getElementById("mode").innerHTML = "";
+    }
+    else if (functionSelected == "sizeof") {
+        document.getElementById("format").innerHTML = "size_t sizeof(type);";
+        document.getElementById("functionality").innerHTML = "Returns the size of a type";
+        document.getElementById("return").innerHTML = "size of the type";
+        document.getElementById("tag").style.display = "none";
+        document.getElementById("mode").innerHTML = "";
+    }
 }
