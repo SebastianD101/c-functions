@@ -1,5 +1,8 @@
 function functionChange() {
     var functionSelected = document.getElementById("selectMenu").value;
+    document.getElementById("format-tag").style.display = "block";
+    document.getElementById("fun-tag").style.display = "block";
+    document.getElementById("return-tag").style.display = "block";
     if (functionSelected == "fopen") {
         document.getElementById("format").innerHTML = "FILE *fopen(char *filename, char *mode);";
         document.getElementById("functionality").innerHTML = "Opens a file for reading or writing";
