@@ -91,7 +91,7 @@ function functionChange() {
         document.getElementById("tag").style.display = "none";
         document.getElementById("mode").innerHTML = "";
     }
-    else if (functionSelect == "calloc") {
+    else if (functionSelected == "calloc") {
         document.getElementById("format").innerHTML = "void *calloc(size_t nmemb, size_t size);";
         document.getElementById("functionality").innerHTML = "Allocates memory for an array";
         document.getElementById("return").innerHTML = "pointer to the allocated memory";
